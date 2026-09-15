@@ -1,0 +1,35 @@
+{
+  "brand": {
+    "name": "Instituto Dra. Priscila Marinho",
+    "segment": "Harmonização facial e estética facial e corporal",
+    "concept": "Assinatura dourada, fundo preto, pausas em marfim e curvas discretas inspiradas no círculo do monograma original."
+  },
+  "colors": {
+    "primary": "#000000",
+    "secondary": "#F3EFE7",
+    "accent": "#CCAB70",
+    "background": "#000000",
+    "surface": "#111110",
+    "text": "#F3EFE7",
+    "muted": "#BBB5AB",
+    "text_on_light": "#22221F",
+    "muted_on_light": "#625E56",
+    "accent_on_light": "#755627",
+    "line": "#41392B"
+  },
+  "typography": {
+    "display": "Cormorant Garamond",
+    "body": "Manrope",
+    "display_style": "Serifada de alto contraste, pesos 400/500, itálico pontual; fallback Georgia.",
+    "body_style": "Sans de leitura limpa, pesos 400/500/600; fallback Arial."
+  },
+  "visual_language": {
+    "direction": "Editorial institucional, centrada em texto e no logo autêntico.",
+    "spacing": "Escala de 8px; amplo espaço entre seções; largura de leitura limitada.",
+    "border_radius": "Zero em controles; curva apenas no contorno inspirado no monograma.",
+    "shadow_usage": "Nenhuma.",
+    "card_usage": "Nenhum grid de cards; áreas de atuação em linhas separadas por filetes.",
+    "image_style": "Logo original até 150px; sem imagens de procedimentos sem identificação, stock ou imagens geradas.",
+    "signature_device": "Contorno oval fino inspirado no círculo do monograma PM; filetes dourados; preto e marfim."
+  }
+}

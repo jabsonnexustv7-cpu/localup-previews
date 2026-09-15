@@ -1,0 +1,44 @@
+{
+  "slug": "instituto-dra-priscila-marinho",
+  "company_name": "Instituto Dra. Priscila Marinho",
+  "segment": "Harmonização facial e estética facial e corporal",
+  "mode": "PREVIEW",
+  "status": "prospect",
+  "sources": [
+    {
+      "type": "instagram",
+      "url": "https://www.instagram.com/instituto_drapriscilamarinho/",
+      "notes": "Nome e áreas divulgadas confirmados por título e metadados públicos. Feed limitado por cadastro; fotografia e cores recorrentes do feed não avaliadas."
+    },
+    {
+      "type": "user_supplied_logo",
+      "url": "attachment:codex-clipboard-1293f532-9a60-4038-8d94-a0a06780f01e.png",
+      "notes": "Logo original 150×150 enviado pelo usuário. Identidade preta e dourada, monograma circular e arabescos; fonte visual principal."
+    }
+  ],
+  "created_at": "2026-09-15T23:48:46.650Z",
+  "updated_at": "2026-09-15T23:48:46.650Z",
+  "preview_url": "https://preview.localup.net.br/instituto-dra-priscila-marinho/",
+  "lead_capture_enabled": false,
+  "analytics_enabled": false,
+  "assumptions": [
+    "Copy editorial proposta requer aprovação do instituto antes de produção.",
+    "Logo de baixa resolução; solicitar vetor/original para produção.",
+    "Não foram confirmados cidade, contatos, formação, registro, equipe ou tratamentos específicos.",
+    "Fotos de procedimentos sem descrição não sustentam inferências de tratamentos ou resultados.",
+    "Não houve análise visual completa do feed; direção derivada do logo enviado e da bio."
+  ],
+  "qa": {
+    "visual": "passed",
+    "responsive": "passed",
+    "tested_widths": [
+      320,
+      390,
+      540,
+      768,
+      1024,
+      1440
+    ],
+    "report": "design/qa-report.md"
+  }
+}
