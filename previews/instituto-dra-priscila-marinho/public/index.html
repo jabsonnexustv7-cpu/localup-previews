@@ -17,7 +17,7 @@
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
   <header class="header wrap">
     <a class="brand" href="#inicio" aria-label="Instituto Dra. Priscila Marinho — início">
-      <span class="logo-window"><img src="assets/logo-instituto.png" width="150" height="150" alt="Instituto Dra. Priscila Marinho, monograma dourado sobre fundo preto"></span>
+      <picture class="brand-logo"><img class="brand-logo__image brand-logo__image--legacy" src="assets/logo-instituto.png" width="150" height="150" alt="Instituto Dra. Priscila Marinho, monograma dourado sobre fundo preto"></picture>
     </a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation" hidden>Menu <span aria-hidden="true">+</span></button>
     <nav id="navigation" aria-label="Navegação principal">
@@ -30,13 +30,18 @@
   <main id="conteudo">
     <section class="hero wrap" id="inicio" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="short-line" aria-hidden="true"></span> Instituto Dra. Priscila Marinho</p>
-        <h1 id="hero-title">A estética em sua<br>expressão mais<br><em>pessoal.</em></h1>
-        <p class="hero-description">Harmonização facial.<br>Estética facial e corporal.</p>
-        <a class="text-link" href="#areas">Conheça as áreas de atuação <span aria-hidden="true">↓</span></a>
+        <p class="eyebrow" data-reveal style="--reveal-delay: 0ms"><span class="short-line" aria-hidden="true"></span> Instituto Dra. Priscila Marinho</p>
+        <h1 id="hero-title" data-reveal style="--reveal-delay: 90ms">A estética em sua<br>expressão mais<br><em>pessoal.</em></h1>
+        <p class="hero-description" data-reveal style="--reveal-delay: 180ms">Harmonização facial.<br>Estética facial e corporal.</p>
+        <a class="text-link" href="#areas" data-reveal style="--reveal-delay: 270ms">Conheça as áreas de atuação <span aria-hidden="true">↓</span></a>
       </div>
       <div class="hero-signature" aria-hidden="true">
-        <div class="signature-outline"></div>
+        <svg class="signature-geometry" viewBox="0 0 360 500" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+          <path class="geometry-primary" pathLength="1" d="M176 24C79 24 30 131 30 250S79 476 176 476M184 476C281 476 330 369 330 250S281 24 184 24" />
+          <path class="geometry-secondary" pathLength="1" d="M157 35C70 50 17 144 17 250S70 450 157 465M203 465C290 450 343 356 343 250S290 50 203 35" />
+          <path class="geometry-flourish" pathLength="1" d="M151 482C162 482 167 474 180 474S198 482 209 482M151 18C162 18 167 26 180 26S198 18 209 18" />
+          <path class="geometry-detail" d="M180 13L184 18L180 23L176 18ZM180 477L184 482L180 487L176 482Z" />
+        </svg>
         <p class="signature-kicker">Estética</p>
         <p class="signature-title">Facial<br><em>&amp;</em><br>Corporal</p>
         <span class="signature-line"></span>
@@ -51,7 +56,7 @@
 
     <section class="institute light" id="instituto" aria-labelledby="institute-title">
       <div class="wrap institute-grid">
-        <div class="section-heading">
+        <div class="section-heading" data-reveal>
           <p class="eyebrow">01 / O instituto</p>
           <h2 id="institute-title">Um nome.<br>Uma <em>assinatura.</em></h2>
         </div>
@@ -67,24 +72,24 @@
 
     <section class="areas wrap" id="areas" aria-labelledby="areas-title">
       <div class="areas-heading">
-        <div>
+        <div data-reveal>
           <p class="eyebrow">02 / Áreas de atuação</p>
           <h2 id="areas-title">A estética em<br><em>diferentes perspectivas.</em></h2>
         </div>
         <p class="section-note">Facial e corporal.<br> Conheça as áreas do instituto.</p>
       </div>
       <div class="area-list">
-        <article class="area-row">
+        <article class="area-row" data-reveal style="--reveal-delay: 0ms">
           <span class="area-number" aria-hidden="true">I.</span>
           <h3>Harmonização <em>facial</em></h3>
           <p>O rosto como foco<br> da abordagem estética.</p>
         </article>
-        <article class="area-row">
+        <article class="area-row" data-reveal style="--reveal-delay: 90ms">
           <span class="area-number" aria-hidden="true">II.</span>
           <h3>Estética <em>facial</em></h3>
           <p>A estética dedicada<br> à face.</p>
         </article>
-        <article class="area-row">
+        <article class="area-row" data-reveal style="--reveal-delay: 180ms">
           <span class="area-number" aria-hidden="true">III.</span>
           <h3>Estética <em>corporal</em></h3>
           <p>O corpo como parte<br> do olhar estético.</p>
@@ -98,7 +103,7 @@
 
     <section class="proposal light" id="proposta" aria-labelledby="proposal-title">
       <div class="wrap proposal-grid">
-        <div>
+        <div data-reveal>
           <p class="eyebrow">Uma proposta LocalUp</p>
           <h2 id="proposal-title">A sua assinatura.<br><em>Agora, na web.</em></h2>
         </div>
@@ -113,7 +118,7 @@
 
   <footer class="footer wrap">
     <div class="footer-top">
-      <a class="brand" href="#inicio" aria-label="Instituto Dra. Priscila Marinho — voltar ao início"><span class="logo-window"><img src="assets/logo-instituto.png" width="150" height="150" alt="Instituto Dra. Priscila Marinho" loading="lazy"></span></a>
+      <a class="brand" href="#inicio" aria-label="Instituto Dra. Priscila Marinho — voltar ao início"><picture class="brand-logo"><img class="brand-logo__image brand-logo__image--legacy" src="assets/logo-instituto.png" width="150" height="150" alt="Instituto Dra. Priscila Marinho" loading="lazy"></picture></a>
       <p>Harmonização facial<br>Estética facial &amp; corporal</p>
       <a class="text-link" href="https://www.instagram.com/instituto_drapriscilamarinho/" target="_blank" rel="noopener noreferrer">Instagram do instituto <span aria-hidden="true">↗</span><span class="sr-only"> (abre em nova aba)</span></a>
     </div>

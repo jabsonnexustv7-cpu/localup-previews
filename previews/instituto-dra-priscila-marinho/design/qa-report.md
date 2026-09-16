@@ -59,3 +59,47 @@ Capturas e resultados automatizados: pasta temporária localup-priscila-qa (fora
 - Sem fotos institucionais ou prints suficientes para avaliar o feed completo.
 - Nome de tratamentos, formação/registro, cidade, contatos, horários, equipe e copy precisam de confirmação.
 - Fotos de procedimentos sem descrição não usadas para inferência de tratamentos/resultados.
+
+---
+
+## Histórico adicional — refinamento premium (15/09/2026)
+
+Resultado: APROVADO. O histórico acima foi preservado. Escopo: index.html, styles.css, script.js e assets/grain.svg em public/, mais esta atualização de relatório expressamente solicitada. Brief, tokens, manifesto, build e infraestrutura permanecem iguais.
+
+### Refinamentos e Sophistication Pass
+- Entrada única por IntersectionObserver: fade e translateY de 14px no hero, nos títulos de seção e nas linhas de áreas. Sequência em intervalos de 90ms; transições de 650ms com curva suave. Sem bibliotecas de animação.
+- Contorno estático substituído por SVG de linha fina, derivado do círculo do monograma, com dois arcos e pequenos detalhes simétricos. Traçado de 1,8s, com atrasos de 180/300ms; termina e permanece estático. Sem rotação contínua, foto, mockup ou redesenho do logo. Gráfico decorativo aria-hidden/focusable=false.
+- Hover das áreas com tinta dourada a 3,5% e deslocamento de 4px do número, restritos a mouse/ponteiro preciso. Linhas não se tornam botões fictícios.
+- Underline dos text-links se expande da esquerda; setas têm deslocamento de 2px. CTA ganha alteração discreta de cor/borda e elevação de 2px. Foco visível mantido.
+- Grain SVG tileável 128×128, opacidade de 3,5% dentro do próprio asset, no fundo preto. Seções marfim opacas permanecem sem textura. Sem overlays sobre controles ou texto.
+- Container do logo agora é picture com proporção estável, object-fit:contain e largura máxima de apresentação de 150px (130px no mobile). A classe brand-logo__image--legacy concentra o recorte central do screenshot atual, sem posição absoluta ou offsets em pixels. Para receber o original em vetor/alta resolução, trocar src/dimensões intrínsecas e remover somente essa classe; o container e o layout permanecem estáveis. PNG original e fontes locais não foram alterados.
+- Inspeção das novas capturas integrais de desktop 1440px e mobile 390px: composição, espaçamento, tipografia e estrutura editorial preservados; textura e detalhes contidos. Sem cards, sombras, gradientes, novas fotos ou alterações de copy.
+
+### Rechecagem Playwright — Microsoft Edge 153.0.4234.32
+
+| Largura | scrollWidth | Imagens quebradas | Erros de console/JS | Revelações ao rolar |
+| --- | --- | --- | --- | --- |
+| 320px | 320px | 0 | 0 | Aprovadas |
+| 390px | 390px | 0 | 0 | Aprovadas |
+| 540px | 540px | 0 | 0 | Aprovadas |
+| 768px | 768px | 0 | 0 | Aprovadas |
+| 1024px | 1024px | 0 | 0 | Aprovadas |
+| 1440px | 1440px | 0 | 0 | Aprovadas |
+
+- Cada elemento foi trazido à viewport; classe de espera removida e opacity=1 confirmado. Sem overflow antes ou depois das entradas. Efeitos não usam translateX no container da linha.
+- Hero observado durante a entrada, com transições ativas; SVG observado com stroke-dashoffset intermediário de aproximadamente 0,951 e depois 0, confirmando o traçado real.
+- Delays das áreas verificados: 0/90/180ms. Hover do número: matrix com translateX=4px; underline expandido até escala 1; CTA com translateY=-2px, todos verificados no navegador.
+- Menu mobile: abrir/fechar, aria-expanded, navegação por âncoras e Escape com retorno de foco ao botão aprovados nas três larguras mobile. Skip link e outlines mantidos.
+- prefers-reduced-motion: sem classes de espera, sem traçado, sem transições/deslocamentos de hover e sem scroll suave. Preferência alterada durante a visita também cancela os efeitos e revela todo o conteúdo.
+- JavaScript desativado: navegação e conteúdo disponíveis; desenho estático. IntersectionObserver indisponível: conteúdo continua visível. Foco em link com revelação pendente remove a espera e mantém opacity=1; CSS focus-within assegura visibilidade imediata.
+- Simulação de futuro logo SVG 300×100 no desktop e mobile: container manteve exatamente largura/altura e object-fit:contain, sem modificar o asset atual.
+- Fontes locais carregadas, imagens com dimensões, links internos válidos e único h1 mantidos. Zero falhas de recursos locais no carregamento das seis viewports.
+- Links externos mantêm noopener/noreferrer e descrição acessível de nova aba. Sem scripts externos, formulário, analytics ou captação.
+
+### Contraste e garantias de publicação
+- Contraste de texto validado >=4,5:1: dourado sobre preto com textura/hover conservador 9,23:1; texto muted no mesmo fundo 9,88:1; dourado no marfim 5,88:1; muted no marfim 5,63:1; texto do CTA no hover 10,53:1; seta dourada no hover do CTA 5,54:1. Filetes/grain são decorativos e não carregam informação.
+- Meta noindex,nofollow,noarchive e disclosure LocalUp mantidos literalmente; nenhum dado empresarial novo.
+- Artefato validado: manifesto/brief/tokens ausentes e retornando 404, raiz sem listagem e robots.txt com Disallow: /.
+- npm run build e git diff --check aprovados. Asset novo contém apenas SVG estático, sem scripts/fontes/imagens remotos.
+- Capturas e scripts de verificação ficam na pasta temporária localup-priscila-refinement-qa, fora do repositório e da publicação. Nenhuma evidência interna foi inserida em public/.
+- Limitações anteriores (logo de baixa resolução, feed incompleto, ausência de fotos institucionais e validação de dados para produção) seguem aplicáveis.
