@@ -7,7 +7,6 @@
 
     const setOpen = (open) => {
       toggle.setAttribute('aria-expanded', String(open));
-      toggle.querySelector('span').textContent = open ? '−' : '+';
       navigation.classList.toggle('is-open', open);
     };
 

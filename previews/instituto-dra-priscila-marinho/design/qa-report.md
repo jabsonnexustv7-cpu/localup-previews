@@ -103,3 +103,12 @@ Resultado: APROVADO. O histórico acima foi preservado. Escopo: index.html, styl
 - npm run build e git diff --check aprovados. Asset novo contém apenas SVG estático, sem scripts/fontes/imagens remotos.
 - Capturas e scripts de verificação ficam na pasta temporária localup-priscila-refinement-qa, fora do repositório e da publicação. Nenhuma evidência interna foi inserida em public/.
 - Limitações anteriores (logo de baixa resolução, feed incompleto, ausência de fotos institucionais e validação de dados para produção) seguem aplicáveis.
+
+## Histórico adicional — ícones consistentes no mobile (15/09/2026)
+- Setas de navegação/CTA e símbolo do menu substituídos por SVG inline de 18px, traço de 1,3px e currentColor. Não dependem de fonte de símbolos ou apresentação emoji do sistema.
+- SVGs decorativos usam aria-hidden e focusable=false. Menu passa de mais para menos pela opacidade do traço vertical ligada a aria-expanded, sem substituir o SVG por texto.
+- Textos, destinos dos links, paleta, assets fotográficos, fontes, animações, noindex e disclosure permanecem iguais. CTA “Ver proposta da LocalUp” mantém https://localup.net.br/.
+- Build e suite Playwright novamente aprovados em 320/390/540/768/1024/1440px: scrollWidth igual à viewport, zero imagens quebradas, erros JavaScript/console ou falhas de recursos.
+- Menu mobile, Escape/retorno de foco, âncoras, conteúdo sem JavaScript/IntersectionObserver, movimento reduzido inicial e em runtime, entradas, stagger e microinterações aprovados.
+- Nova captura mobile de 390px inspecionada: ícones finos dourados alinhados e sem alteração de composição. Ausência de caracteres de seta/sinal de menos no HTML/JS confirmada por busca.
+- Histórico anterior preservado; alteração restrita ao HTML/CSS/JS públicos e a esta atualização de QA. Sem formulários, analytics, contatos ou informações empresariais novos.
